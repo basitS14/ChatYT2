@@ -1,0 +1,177 @@
+Kinesis in also 2017, that's when I was like, "Oh, okay." - Would you recommend Kinesis to people? - I'm technically sponsored by Kinesis, so it's hard for someone
+to believe someone that's sponsored by it. But I did use it before
+I ever became sponsored. They're the only sponsor that
+I reached out to and said, "I need a sponsorship from you. I'm going to use you either way. You can say no, but I really love it." And for the first three
+years of using Kinesis, they gave me free Kinesises,
+Kenisi, as my sponsorship. - Kenisi. Yeah, I'm always torn. I tried to leave so many times. - You can't. It's too good. - But, see, I have this absurd situation of traveling with it. - I relate. (chuckles) - Yeah. I'm literally going
+to the war zone in Ukraine. I have a Kinesis keyboard, (chuckles) a laptop, and just a few other
+small things and that's it. And it's like is Kinesis
+keyboard really going to be 30% of volume that you're
+bringing to a war zone? - Looks like the answer is yes. - Yeah. Do you really
+derive that much value? I think it's probably spiritual
+or psychological for me. It feels like home. There's comfort associated with it. I try to leave. - I love this experience. It's like a relationship
+you have with the thing. - It is. But I'm trying to figure out if it's a toxic relationship or not. I think it's mostly
+love. I think it's love. Like all relationship, there's some push and pull complications, but- - They say that distance
+makes the heart grow fonder, so maybe sometimes the Kinesis keyboard needs to stay at home and the
+laptop keyboard can be the one so that your heart grows even more fond and that connection grows even deeper. - I already miss it as you
+say it, so I don't know. I think it's coming
+along to all the trips. If it breaks down, though... I was worried that Kinesis
+was shut down as a company. I'm like, what's the business model here? Who actually uses these keyboards? But apparently they're still going strong. - Yeah. Who uses these keyboards? As you use the keyboard "I have to take it with me everywhere." I wonder who uses these keyboards. - Yeah. Yep. I should mention that one of the things when I first became a fan of yours, I heard you talk about coffee and term... I still don't, by the way, understand what you're even talking about.
+I need to actually use it. But you run, amongst many
+things, a coffee company. Man, this smells so good. This one is dark mode, dark
+roast, whole coffee beans. There is seg origin, dash,
+dash location. Brazil. - Yeah, there's a bunch of stuff on there. - Stuff on there that's very devy. Shop, server, web. Can you legit, as such,
+order coffee via SSH? - As of right now, it's the only way you can
+get the coffee is via SSH. Okay, can I just origin, origin story you? - Yeah, yeah. Yeah, right. I was going to do some
+kind of command line. Command to request or dash
+dash help or something or- - Command coffee?
+- Command coffee. - Okay, TJ and I, again,
+same Teej, Teej TV, about... By the way, very amazing
+designs done by David Hill. They're very, very good.
+Let me give the basic ideas. It must've been about
+a year and a half ago, TJ and I were talking like, "Hey, every one of these people that have some sort of following, some sort of online presence, they're always selling a thing," but I got nothing to sell. I don't really want to do merch. I've never really enjoyed doing merch. I just find that, I don't know, it's just not as much fun for me. - Don't want to have a tequila? - I don't want a tequila. I want something that-
+- Like The Rock. - And I also want something that I really don't
+feel bad about selling. There's a lot of people
+that will go on the internet and they'll shill for a
+whole bunch of products like, "Oh, okay, try this, try this." And this is why I've only
+ever really done Kinesis is because it's like, well,
+I can point to something that was really bad in my
+life, I was very scared, and now it's not bad anymore. It's like, okay, that one made sense. But everything else always has
+been... It's harder for me. And so we just talked for
+so long, and we love Neovim, so we're just like, "Why haven't we could do
+something from Neovim?" And we're laughing about that, ordering from Neovim
+is just so ridiculous. And then at some point, we're just like, "Well, wait a second. And maybe we could do coffee.
+Every developer loves coffee. Maybe we could figure out
+this coffee business." And so I had a good
+friend named Dax, THDXR. Dax, yeah, Dax. The
+most sassiest man alive. - Sassiest? - Oh yeah, he has a lot of sass. - Beard? - Yep, he has a beard. He does SST. He does a lot of stuff. Very, very talented. We'll
+call him DevOps engineer. He's more than that.
+But very talented guy. Him and another person named
+Adamdotdev, vegan, by the way, great guy. We take him to
+Korean barbecue all the time. He eats nothing. - That's great. - And Liz, she has been super important to the terminal coffee company. I think without her, we would
+not have been able to do what we have done. And then also David Hill,
+designer, he does Laravel. He designs for Laravel.
+Very talented designer. And so we all came together. And we were just laughing
+about how could we do something that's just ridiculous? And
+that's what we came up with. Yeah, there you go. You
+just open the website. You literally cannot order. We actually do not allow you to order. - The website is something
+that looks like the terminal. Use command below to order your
+delicious whole coffee bean. SSH terminal.shop. - Yeah. You can only SSH into it. You have to copy that command
+and throw it in there. If you want to add in
+the little terminal shop for your known hosts, you could do that. - How do you handle payment? - Through Stripe. And so one of the things, we'll
+be adding a mobile checkout to where I'll show a
+QR code in the terminal and you can just check out
+on your phone, but right now, you enter in your credentials,
+it goes to Stripe. - [Lex] Via all terminal, like SSH. - Yeah, SSH, obviously it
+stands for Secure Shell. It uses elliptical quantum safe algorithms to ensure that your data's
+not being intercepted. - Yeah, but does he use AI? - I'm pretty sure Dax uses AI. - Quantum AI?
+- Can this- - Fusion quantum AI?
+- Can this even be a company if it's not using AI? - We have some crypto
+chains with some quantum AI that's powered by Fusion,
+- Great. - so it's pretty wild. Anyway, yeah, we just came
+together where we thought, what is the... That was from the Mike Tyson fight. It was literally that night
+Mike Tyson kissed the reporter and then walked out without any clothes. We did an ad for somebody. - Nice.
+- But we decided to make a coffee shop, and then we thought instead of just making it Neovim, what if we made it from SSH? Because everybody has
+SSH. You have VS Code. Launch VS Code. You can order
+coffee from within VS Code. Because your little bottom
+terminal that has access to SSH, bada bing, bada boom. It's fun, and so we really- - I love this.
+- We just wanted to do something where there's no
+level and there's no world that makes me feel bad about selling this and people buying it. It's good, ethical coffee. We developed the entire
+supply chain and everything. It's all packaged, it's all boutique. It's pretty high-end coffee. It tastes really, really good. - At this point, I don't
+like drinking other coffee. I get upset about it
+because it's not as good. And so it's funny that I've
+fallen for my own stuff. I'm high on my own supply
+pretty hard right now. I just got done ordering 16 bags and gave it out to my family
+to try to convince them. But it's just something where it's like I didn't sell you a software product that's going to influence your startup that could potentially lead to disaster, I didn't convince you
+to do a bunch of stuff that's going to change
+your career, I just said, "Hey, here's some coffee." And it's like a fun experience. - Yeah, it's fun, everything. The humor on it is great. People should go to terminal.shop. - SSH terminal.shop. - I'm speaking to people
+that don't know what SSH is. And there, you can read the command and then figure out how
+to use SSH in order to... It's a kind of documentation, right? - Yeah.
+- On the website. - If you can't use SSH, you probably should just not
+worry about buying our coffee. Like that's the- - You can learn.
+- You can learn. If you're active and
+you're a computer person, you'd like to launch the terminal and feel like a hacker, go for it. We even have subscriptions. - What I would love to see... This is how it came up I think
+on the cursor conversation, is that I would love it
+if an AI agent did this, like Anthropos computer
+use or something like that, actually took the action
+of ordering the coffee while it was programming. - Yeah, like, "Hey, order me some coffee," and it actually go off. "Give me dark roast." Order coffee. It could actually go through
+the whole flow of order. - Yeah, the whole flow. But even better, if you
+didn't ask it to order coffee, you asked it to do something, and as a tangent, as a
+side quest it did that. Which is computer use does that. They showed off that it's
+able to go to I think Google for some images, take a pause, and then continue doing other stuff. Anyway, yeah, super cool idea. Love it. Speaking of which, let's talk AI. - All right. - You've been both positive
+and negative on the role of AI in the whole programming
+software engineering experience. As it stands today, what do you think? What's your general view about AI? What is it effective at?     
+What is it not so good at? - Okay, my general view is it comes down to something
+that's pretty simple, which is that if you're doing something in which is very predictable,
+AI is really nice. When you're doing something
+that is just not predictable, AI is not very nice to use. If you're using anything
+that's more cutting edge, AI will not be using it, or AI won't be very good
+at doing stuff with it. It's not great at Zig because Zig is just, say, less documented. It's
+really great at TypeScript. I think there's a lot
+of interesting things that are going to come down through AI that I think a lot of people
+aren't really prepared for or thinking through. TJ's the genesis of this
+idea, but the idea that I think there's going to be
+a lot of market manipulation, if you will, through AI. Meaning, hey, you want to research, say, best woodworking tools. Someone's going to be buying an ad spot. Someone's going to be buying
+premium training data. They're the ones that get
+the big boosts in the LLMs. But LLMs don't really have
+to market as an advertisement because it's not really
+directly an advertisement, they just had a more premium spot, per se, in the training data; a little
+bit extra learning to it. It's like there's a lot of things about AI that I fear upcoming. A lot of it just comes
+down to people not learning or making the trade-off where productivity is the
+only thing that matters. And I don't think productivity is the only thing that matters. If you want to build something
+complex and difficult, productivity is not the only thing. You actually are going to
+have to do deep learning and pursue it beyond the basics. And so I see AI as this really cool thing. It feels like a magic trick. I remember the first time I used it, I got early access to GitHub Copilot. In fact, Nat Friedman
+saw my Twitch clip of me asking GitHub for it, and he
+sent me early access himself. It was awesome. And when I used it, it predicted
+an if statement correct and my mind was just absolutely blown because I had nothing before then, and now it's just like first time ever. And I just remember thinking, man, this is going to change
+programming so much. And then the more I used
+it, the more I just... For me personally, I
+kept introducing bugs, and I couldn't figure out why. And what I realized is that I developed I wasn't copiloting well, I
+was autopiloting much better. And my ability to read code versus my ability to critically
+think and write code, they're definitely different
+sets of skill levels. I don't consider as well
+when I just read code as opposed to what I write code. And so I struggled there. - I do think that's a skill set. - [ThePrimeagen] Yeah.
+Skill issue for sure. - Skill issue. For people who are not
+aware, that's a hashtag thing sometimes used mockingly in this case. There's several layers
+mockingly, but also seriously, meaning the criticism
+is grounded in the fact that you lack the skill versus some kind of fundamental truth. Yes.
+- Yes. - I think that that's the reason I use actually Copilot cursor a lot is for developing the skill of editing AI so I can just learn how to
+do that better and better. Because I think as I do
+that better and better, I start to utilize AI better. At this time, it is a bit
+of a boilerplate code thing, but you can do out of the
+box novel design decisions or tricky design decisions from scratch but fill out stuff using AI and then just learn
+the skill of modifying. I personally just... It's more fun to program with AI. Even when I delete a lot
+of the code, it's more fun. It's less lonely. It's what I imagine
+pair programming to be. And I've never done it, but it just feels like that friction that you get when you're staring at an
+empty thing is not there. Empty function, empty class, it's just more fun, less lonely. And I do think that a lot of
+the easier type of coding, it really helps with like
+interacting with APIs, basic things that I would
+usually have to look up to stack overflow for. It's just really fast at that. As example, just interacting
+with the YouTube API. The YouTube API documentation
+is not very good. And you can just load it all in there and ask it to generate a set of functions that access the API, all kinds        
+of read and write operations, and it figures it all out. Well, you do have to read. You have to read and check everything. And you start to develop
+the skill of understanding where it misinterpreted the task. What is that skill? I don't even know. You have to be empathic about what the AI, what
+its limitations are. A lot of the times that has
+to do with prompt engineering. You have to at the same time understand what the AI is aware of. What did you actually give it as data to be able to generate the code? A lot of times, we don't realize that we're not giving
+it enough information. - Yeah.
+- So you've to like... Okay, okay, all right. You have to be empathic. Be like, okay, these are
+the files it's aware of. This is the specifics of
+the question you asked it. You have to imagine you're an intern that doesn't know anything else. Oftentimes, we want the AI
+to just figure out the things that's left unspoken. But you can't know those things, you have to specify those things. And so you have to actually
+be much more deliberate and rigorous in the things you
+specify, is to spell it out. And so I just have this sea of
+prompts that I have saved up, and I'm building these
+library of different templates for prompts and it's a mess. And I'm sure there's a lot of developers that have this similar kind of mess. A lot of it has to do
+long-term with the tooling that's going to improve that. One, the systems are going
+to get much more intelligent when you don't need the nuance. And two, there's going to be the tooling that allows you to specify those things and load it in correctly
+and give all the context that the system needs in order
+to make the good decisions. And maybe the system asks
+you follow up questions with, "Here's things you didn't make clear," all that kind of stuff. A lot of that has to
+do with the interface, with the actual design of the tools. Like we said with Cursor, it's going to keep getting
+better and better and better. My sense is developers in
+general should be learning this to not be left behind, to see how that can be
+used as a superpower to boost their productivity,
+their effectiveness, their joy of programming versus be seen as a competitor to them or something like that. But for me already, it's been a big boost to productivity. If you measure the actual how quickly you're able
+to get a thing done, it's been a big... And measured not across minutes
+and hours but days also. Sometimes there's things I have to do that are not that important that I'll just out of
+procrastination will push off. - I know that.

@@ -1,4 +1,6 @@
 .env
-./hf_cache
-./qdrant_storage;C
-./__pycache__
+client_secret.json
+/hf_cache
+/qdrant_storage;C
+/src/__pycache__
+.venv
