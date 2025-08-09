@@ -1,0 +1,4 @@
+.env
+./hf_cache
+./qdrant_storage;C
+./__pycache__
