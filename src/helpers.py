@@ -15,15 +15,17 @@ from llama_index.core.schema import TextNode
 from more_itertools import chunked
 from qdrant_client import QdrantClient
 from qdrant_client.models import (
-    VectorParams,
-  Distance , 
-  Filter,
-    FieldCondition,
-      MatchValue ,
+        VectorParams,
+        Distance , 
+        Filter,
+        FieldCondition,
+        MatchValue ,
         BinaryQuantizationConfig ,
-          BinaryQuantization ,
-            PointStruct
+        BinaryQuantization ,
+        PointStruct
 )
+
+from src.prompts import CHAT_WITHOUT_QUERY, PROMPT_WITH_CONTEXT, PROMPT_WITH_TOOLS
 
 
 load_dotenv()
@@ -176,7 +178,7 @@ class TranscriptIndexerQdrant:
         self.client = QdrantClient(host="localhost", port=6333)
         self.embed_model = HuggingFaceEmbedding(
             model_name="BAAI/bge-large-en-v1.5",
-            trust_remote_code=True,
+            trust_remote_code=True, 
             cache_folder='./hf_cache'
         )
 
@@ -225,7 +227,7 @@ class TranscriptIndexerQdrant:
             points = points
         )
 
-    def isDataExist(self , video_id):
+    def retrieval_by_video_id(self , video_id):
         
         scroll_result = self.client.scroll(
             collection_name=self.collection_name,
@@ -256,11 +258,20 @@ class TranscriptIndexerQdrant:
         full_context = [hit.payload["context"] for hit in search_result if "context" in hit.payload]
         print("context retrieved")
         return full_context
+    
+    def insert_transcript(self , video_id):
+        transcript = get_transcript(video_id)
+        chunks = split_transcript(transcript)
+        embeddings, batch_context = self.generate_vector_embeddings(chunks)
+
+        self.insert_data(video_id , embeddings, batch_context)
+
+        print("Data inserted !!")
         
 
 
-class QueryResolver:
-    def __init__(self):
+class QueryResolver():
+    def __init__(self , video_id):
         self.llm = Groq(
             model="openai/gpt-oss-20b",
             api_key=os.getenv("GROQ_API_KEY"),
@@ -268,21 +279,42 @@ class QueryResolver:
             temperature = 0.5
 
         )
+        self.indexer = TranscriptIndexerQdrant()
+        self.prompt = PROMPT_WITH_TOOLS
 
-        self.prompt_template =(
-            "You are helpful mostly answer the queries based on context only.\n"
-            "But if queries are some daily used phrase like 'thank you' , 'sorry' then reply in conversatinal manner\n"
-            "If queries are vague then tell user to explain more\n"
-             "Context information is given below:\n"
-               " =====================================\n"
-               " CONTEXT : {context} \n"
-                "=====================================\n"
-                "Given the context information above think step by step to answer\n"
-                "user's query if you don't know the answer say that you don't know \n"
-                "query is given below:\n"
-                "=====================================\n"
-                "QUERY : {query}"
-        ) 
+        if not self.indexer.retrieval_by_video_id(video_id):
+            self.indexer.insert_transcript(video_id)
+
+    def chat_with_function_calling(self , user_query):
+        # First LLM call - let it decide whether to retrieve
+        response = self.llm.chat(
+            messages=[
+                {"role": "system", "content": self.prompt},
+                {"role": "user", "content": user_query}
+            ],
+            tools=[self.indexer.retrieve_documents],
+            tool_choice="auto"
+        )
+        
+        # Check if LLM wants to retrieve documents
+        if response.tool_calls:
+            # Execute retrieval
+            search_query = response.tool_calls[0].arguments.query
+            context = self.indexer.retrieve_documents(search_query)
+            
+            # Second LLM call with context
+            final_response = self.llm.chat_(
+                messages=[
+                    {"role": "system", "content": self.prompt},
+                    {"role": "user", "content": user_query},
+                    {"role": "assistant", "content": "", "tool_calls": response.tool_calls},
+                    {"role": "tool", "content": f"Retrieved context: {context}", "tool_call_id": response.tool_calls[0].id}
+                ]
+            )
+            return final_response.content
+        else:
+            # Direct response (greeting/casual)
+            return response.content
     
     def get_responce( self, query , full_context):
         prompt = self.prompt_template.format(
@@ -297,6 +329,9 @@ class QueryResolver:
         for chunk in response:
             full_response += chunk.delta # use chunk.text if .delta doesn't exist
         return full_response
+
+        
+    
 
                
             

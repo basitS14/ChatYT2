@@ -7,8 +7,8 @@ from src.helpers import (
 )
 
 class InsertionPipeline:
-    def __init__(self , link):
-        self.video_id = extract_id(link)
+    def __init__(self , video_id):
+        self.video_id = video_id
         self.resolver = QueryResolver()
         self.indexer = TranscriptIndexerQdrant()
     
@@ -29,6 +29,7 @@ class RetrievalPipeline:
     
     def invoke(self , query):
         retrieved_documents = self.indexer.retrieve_documents(query)
+        
         res = self.resolver.get_responce(query , retrieved_documents)
         return res
 
